@@ -33,7 +33,7 @@ int max = 0;
         if (secondNamber>thirdNamber)
             max = secondNamber;
         else
-            if (firstNamber<=thirdNamber)
+            if (firstNamber<=thirdNamber) //in case all the numbers are equal
                 max = thirdNamber;
 
 Console.WriteLine("The largest namber is " + max);
