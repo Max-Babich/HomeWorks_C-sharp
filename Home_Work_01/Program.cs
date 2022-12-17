@@ -19,7 +19,7 @@ int secondNamber = Convert.ToInt32 (Console.ReadLine());
     /* Задача 2. Напишите программу, которая принимает на вход три числа и выдаёт
     максимальное из этих чисел.*/
 
-/*
+
 Console.Write ("Enter the first namber: ");
 int firstNamber = Convert.ToInt32 (Console.ReadLine());
 Console.Write ("Enter the second namber: ");
@@ -33,11 +33,11 @@ int max = 0;
         if (secondNamber>thirdNamber)
             max = secondNamber;
         else
-            if (firstNamber<thirdNamber)
+            if (firstNamber<=thirdNamber)
                 max = thirdNamber;
 
 Console.WriteLine("The largest namber is " + max);
-*/
+
         
      
      /* Задача 3. Напишите программу, которая на вход принимает число и выдаёт,
