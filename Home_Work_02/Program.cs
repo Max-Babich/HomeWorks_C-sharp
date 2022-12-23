@@ -13,7 +13,7 @@
  int number  = Convert.ToInt32(Console.ReadLine());
    if (number<1000 && number>99) 
    {
-      int answer = secondDigit(number); // with variables
+      //int answer = secondDigit(number); // with variables
       //Console.WriteLine ($"The second digit from your number is {answer}.");
       Console.WriteLine ($"The second digit from your namber is {secondDigit(number)}"); 
    }
