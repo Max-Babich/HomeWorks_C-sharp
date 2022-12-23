@@ -50,3 +50,18 @@ int number = Convert.ToInt32 (Console.ReadLine());
          
 /*Задача 3: Напишите программу, которая принимает на вход цифру, обозначающую день недели,
  и проверяет, является ли этот день выходным.*/
+/*
+ bool day (int num)
+ {
+   if (num==7 || num==6)
+   return true;
+   else 
+   return false;
+ }
+Console.Write("Enter the number of the day of the week: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (day(num)==true)
+   Console.WriteLine("it's a day off");
+else
+   Console.WriteLine("It's a working day");
+*/
