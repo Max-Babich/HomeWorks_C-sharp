@@ -56,3 +56,19 @@ double z2 = Convert.ToDouble(Console.ReadLine());
 
 /*Задача 3. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов
   чисел от 1 до N.*/
+/*
+void thirdDegree (int number)
+{
+    int i = 1; double cube = 0;
+    while (i <= number)
+    {
+        cube = Math.Pow(i, 3);
+        Console.Write( cube + ", ");
+        i++;
+    }
+}
+
+Console.Write("Enter a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+thirdDegree(number);
+*/
