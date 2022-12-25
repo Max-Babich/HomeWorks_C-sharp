@@ -1,9 +1,10 @@
 ﻿/*Задача 1. Напишите программу, которая принимает на вход число и проверяет,
  является ли оно палиндромом.*/
-/*
-int result = 0;
+
+
 int reversNumber (int number)
-{   
+{  
+    int result = 0; 
     while (number > 0)
         {
            int reminder = number % 10;
@@ -22,7 +23,7 @@ int oper = number;
         Console.WriteLine("Your number is a palindrome.");
     else
         Console.WriteLine("Your number is not a palindrome.");
-*/
+
         
         
 
