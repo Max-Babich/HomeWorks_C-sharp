@@ -73,7 +73,7 @@ OddPositionSum(newArray);
 Найдите разницу между максимальным и минимальным элементов массива.
 [3 7 22 2 78] -> 76 */
 
-
+/*
 double[] RandomArray (int size, int minVal, int maxVal)
 {
     double[] array = new double[size];
@@ -105,4 +105,4 @@ Console.Write("Enter the maximum value of random range: ");
 int maxVal = Convert.ToInt32(Console.ReadLine());
 double[] newArray = RandomArray(size, minVal, maxVal);
 Console.Write($"The difference between the minimum and maximum values of the array is {GetDiff (newArray)}.");
-
+*/
