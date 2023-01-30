@@ -73,27 +73,27 @@ OddPositionSum(newArray);
 Найдите разницу между максимальным и минимальным элементов массива.
 [3 7 22 2 78] -> 76 */
 
-/*
-int[] RandomArray (int size, int minVal, int maxVal)
+
+double[] RandomArray (int size, int minVal, int maxVal)
 {
-    int[] array = new int[size];
+    double[] array = new double[size];
     for(int i = 0; i < size; i++)
     {
-        array [i] = new Random().Next (minVal, maxVal+1);
+        array [i] = Math.Round (new Random().NextDouble () + new Random().Next(minVal, maxVal), 3);
         Console.Write(array [i] + " ");
     }
     Console.WriteLine();
     return array;
 }
-int GetDiff(int[] array)
+double GetDiff(double[] array)
 {
-    int maxNum = 0;
+    double maxNum = 0;
     for (int i = 0; i < array.Length; i++)
     if (maxNum < array[i]) maxNum = array[i];
-    int minNum = maxNum;
+    double minNum = maxNum;
     for (int i = 0; i < array.Length; i++)
     if (minNum > array[i]) minNum = array[i];
-    int diff = maxNum - minNum;
+    double diff = maxNum - minNum;
     return diff;
 }
 
@@ -103,6 +103,6 @@ Console.Write("Enter the minimum value of random range: ");
 int minVal = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter the maximum value of random range: ");
 int maxVal = Convert.ToInt32(Console.ReadLine());
-int[] newArray = RandomArray(size, minVal, maxVal);
+double[] newArray = RandomArray(size, minVal, maxVal);
 Console.Write($"The difference between the minimum and maximum values of the array is {GetDiff (newArray)}.");
-*/
+
