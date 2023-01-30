@@ -37,7 +37,7 @@ EvenCount(newArray);
 [3, 7, 23, 12] -> 19
 [-4, -6, 89, 6] -> 0 */
 
-/*
+
 int[] RandomArray (int size, int minVal, int maxVal)
 {
     int[] array = new int[size];
@@ -53,7 +53,7 @@ int[] RandomArray (int size, int minVal, int maxVal)
 void OddPositionSum (int[] array)
 {
     int sum = 0;
-    for (int i =0; i < array.Length; i+=2)
+    for (int i =1; i < array.Length; i+=2)
         sum +=array[i];
     Console.Write($"Sum of odd array elements is {sum}");
 }
@@ -66,7 +66,7 @@ Console.Write("Enter the maximum value of the array: ");
 int maxVal = Convert.ToInt32(Console.ReadLine());
 int[] newArray = RandomArray(size, minVal, maxVal);
 OddPositionSum(newArray);
-*/
+
 
 
 /* Задача 3. Задайте массив вещественных чисел. 
