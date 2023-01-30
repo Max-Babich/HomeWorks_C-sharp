@@ -37,7 +37,7 @@ EvenCount(newArray);
 [3, 7, 23, 12] -> 19
 [-4, -6, 89, 6] -> 0 */
 
-
+/*
 int[] RandomArray (int size, int minVal, int maxVal)
 {
     int[] array = new int[size];
@@ -66,7 +66,7 @@ Console.Write("Enter the maximum value of the array: ");
 int maxVal = Convert.ToInt32(Console.ReadLine());
 int[] newArray = RandomArray(size, minVal, maxVal);
 OddPositionSum(newArray);
-
+*/
 
 
 /* Задача 3. Задайте массив вещественных чисел. 
