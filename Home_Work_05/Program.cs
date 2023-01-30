@@ -53,7 +53,7 @@ int[] RandomArray (int size, int minVal, int maxVal)
 void OddPositionSum (int[] array)
 {
     int sum = 0;
-    for (int i =0; i < array.Length; i+=2)
+    for (int i =1; i < array.Length; i+=2)
         sum +=array[i];
     Console.Write($"Sum of odd array elements is {sum}");
 }
