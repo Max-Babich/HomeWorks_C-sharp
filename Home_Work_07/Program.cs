@@ -51,6 +51,7 @@ Show2dArray(newArray);
 1 7 -> элемента с такими индексами в массиве нет
 */
 
+/*
 double[,] Random2dArray ()
 {   
     Console.Write("Enter the minimum value of random range: ");
@@ -85,6 +86,9 @@ void Show2dArray(double [,] array)
 
 double[,] newArray = Random2dArray ();
 Show2dArray(newArray);
+
+// Тут просто проверка конкретно по условию задачи.
+
 Console.Write("Input the number of row: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the number of column: ");
@@ -94,7 +98,7 @@ if (n > newArray.GetLength(0) || m > newArray.GetLength(1))
     Console.WriteLine("There is no such element.");
 else
     Console.WriteLine($"The value of the row {n} and column {m} element is {newArray[n-1,m-1]}.");
-
+*/
 
 /*Задача 3. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов
 в каждом столбце.
@@ -103,4 +107,58 @@ else
 5 9 2 3
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+*/
+
+/*
+int[,] Random2dArray ()
+{   
+    Console.Write("Enter the minimum value of random range: ");
+    int minVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the maximum value of random range: ");
+    int maxVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the number of rows: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the number of columns: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+
+    int[,] array = new int[rows, columns];
+    for(int i = 0; i < rows; i++)
+        for (int j=0; j < columns; j++)
+        {
+            array [i,j] = new Random().Next(minVal, maxVal+1);
+            
+        }
+    return array;
+}
+
+void Show2dArray(int [,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array [i,j] + "\t");  
+        Console.WriteLine();
+    }
+ Console.WriteLine();   
+}
+
+void GetColSum(int[,] newArray) 
+{
+Console.WriteLine("Arithmetic mean of columns");
+
+    for (int j = 0; j < newArray.GetLength(1); j++)
+    {
+        double avarage = 0;
+        for (int i = 0; i < newArray.GetLength(0); i++)
+        {
+            avarage = (avarage + newArray[i, j]);
+        }
+        avarage = Math.Round(avarage / newArray.GetLength(0),2) ;
+        Console.Write(avarage + "\t");
+    }
+}
+
+int[,] newArray = Random2dArray();
+Show2dArray(newArray);
+GetColSum(newArray);
 */
