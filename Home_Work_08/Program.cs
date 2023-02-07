@@ -10,6 +10,66 @@
 8 4 4 2
 */
 
+/*
+int[,] Random2dArray ()
+{   
+    Console.Write("Enter the minimum value of random range: ");
+    int minVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the maximum value of random range: ");
+    int maxVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the number of rows: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the number of columns: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+
+    int[,] array = new int[rows, columns];
+    for(int i = 0; i < rows; i++)
+        for (int j=0; j < columns; j++)
+        {
+            array [i,j] = new Random().Next(minVal, maxVal+1);
+            
+        }
+    return array;
+}
+
+void Show2dArray(int [,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array [i,j] + "\t");  
+        Console.WriteLine();
+    }
+ Console.WriteLine();   
+}
+
+int[,] OrderedArray (int[,] newArray)
+{
+
+    for (int i = 0; i < newArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < newArray.GetLength(1) - 1; j++)
+        {
+            for (int x = 0; x < newArray.GetLength(1) - 1; x++)
+            {
+                if (newArray[i, x] < newArray[i, x + 1]) 
+                {
+                    int temp = 0;
+                    temp = newArray[i, x];
+                    newArray[i, x] = newArray[i, x + 1];
+                    newArray[i, x + 1] = temp;
+                }
+            }
+        }
+    }
+    return newArray;
+}
+int[,] newArray = Random2dArray();
+Show2dArray(newArray);
+Console.WriteLine("The ordered array is:");
+OrderedArray(newArray);
+Show2dArray(newArray);
+*/
 
 /*Задача 2.  Задайте прямоугольный двумерный массив. Напишите программу,
  которая будет находить строку с наименьшей суммой элементов.
