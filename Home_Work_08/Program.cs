@@ -82,6 +82,61 @@ Show2dArray(newArray);
 суммой элементов: 1 строка.
 */
 
+int[,] Random2dArray ()
+{   
+    Console.Write("Enter the minimum value of random range: ");
+    int minVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the maximum value of random range: ");
+    int maxVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter the size of the square array: ");
+    int index = Convert.ToInt32(Console.ReadLine());
+    
+    int[,] array = new int[index, index];
+    for(int i = 0; i < index; i++)
+        for (int j=0; j < index; j++)
+        
+            array [i,j] = new Random().Next(minVal, maxVal+1);
+            
+        
+    return array;
+}
+
+void Show2dArray(int [,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array [i,j] + "\t");  
+        Console.WriteLine();
+    }
+ Console.WriteLine();   
+}
+
+int GetMinSum (int[,] newArray)
+{
+int minsum = 0;
+int indexRow = 1;
+
+    for (int i = 0; i < newArray.GetLength(0); i++)
+    {
+        int sum = 0;
+            for (int j = 0; j < newArray.GetLength(1); j++)
+            {
+                sum = sum + newArray[i, j];        
+            }
+            if (sum < minsum)
+                {
+                    minsum = sum;
+                    indexRow++;
+                }
+    }
+    return indexRow;
+}
+
+int[,] newArray = Random2dArray();
+Show2dArray(newArray);
+Console.WriteLine("The row with the smallest sum of elements is "+ GetMinSum(newArray));
+
 
 /* Задача 3. Задайте две матрицы. Напишите программу, которая будет находить
  произведение двух матриц.
