@@ -1,0 +1,15 @@
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\bin\Debug\net7.0\Home_Work_09.exe
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\bin\Debug\net7.0\Home_Work_09.deps.json
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\bin\Debug\net7.0\Home_Work_09.runtimeconfig.json
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\bin\Debug\net7.0\Home_Work_09.dll
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\bin\Debug\net7.0\Home_Work_09.pdb
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.csproj.AssemblyReference.cache
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.GeneratedMSBuildEditorConfig.editorconfig
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.AssemblyInfoInputs.cache
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.AssemblyInfo.cs
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.csproj.CoreCompileInputs.cache
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.dll
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\refint\Home_Work_09.dll
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.pdb
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\Home_Work_09.genruntimeconfig.cache
+E:\GIT\HomeWorks_C-sharp\Home_Work_09\obj\Debug\net7.0\ref\Home_Work_09.dll
